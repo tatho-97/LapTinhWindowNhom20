@@ -13,11 +13,11 @@ namespace BTL_QuanLyKhoHang_Nhom20
 {
     public partial class LoginForm : Form
     {
+        string chuoiKetNoi = @"Data Source=HAPZ06\SQLEXPRESS;Initial Catalog=QuanLyCuaHangQuanAo;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True"; SqlConnection conn = null;
         public LoginForm()
         {
             InitializeComponent();
         }
-        string chuoiKetNoi = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QuanLyCuaHangQuanAo;Integrated Security=True;TrustServerCertificate=True"; SqlConnection conn = null;
         private void Form1_Load(object sender, EventArgs e)
         {
         }

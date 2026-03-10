@@ -16,5 +16,13 @@ namespace BTL_QuanLyKhoHang_Nhom20
         {
             InitializeComponent();
         }
+
+        private void ManagerForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            LoginForm login = new LoginForm();
+            login.Show();
+  
+            this.Hide();
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace BTL_QuanLyKhoHang_Nhom20
 {
     public partial class StaffForm : Form
     {
+        string chuoiKetNoi = @"Data Source=HAPZ06\SQLEXPRESS;Initial Catalog=QuanLyCuaHangQuanAo;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;";
         public StaffForm()
         {
             InitializeComponent();
@@ -57,7 +58,6 @@ namespace BTL_QuanLyKhoHang_Nhom20
                 }
             }
         }
-        string chuoiKetNoi = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QuanLyCuaHangQuanAo;Integrated Security=True;TrustServerCertificate=True";
         private void StaffForm_Load(object sender, EventArgs e)
         {
             loadData();
