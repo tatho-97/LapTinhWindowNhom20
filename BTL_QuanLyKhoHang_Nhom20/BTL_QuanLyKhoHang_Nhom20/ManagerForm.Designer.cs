@@ -32,11 +32,11 @@ namespace BTL_QuanLyKhoHang_Nhom20
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btTimKiem = new System.Windows.Forms.Button();
+            this.tbTimKiem = new System.Windows.Forms.TextBox();
+            this.btXoaSanPham = new System.Windows.Forms.Button();
+            this.btThemSanPham = new System.Windows.Forms.Button();
+            this.btSuaSanPham = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,11 +78,11 @@ namespace BTL_QuanLyKhoHang_Nhom20
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.btTimKiem);
+            this.tabPage1.Controls.Add(this.tbTimKiem);
+            this.tabPage1.Controls.Add(this.btXoaSanPham);
+            this.tabPage1.Controls.Add(this.btThemSanPham);
+            this.tabPage1.Controls.Add(this.btSuaSanPham);
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
@@ -100,51 +100,51 @@ namespace BTL_QuanLyKhoHang_Nhom20
             this.label1.TabIndex = 7;
             this.label1.Text = "Tìm kiếm";
             // 
-            // button4
+            // btTimKiem
             // 
-            this.button4.Location = new System.Drawing.Point(456, 96);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(138, 34);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Tìm kiếm";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btTimKiem.Location = new System.Drawing.Point(456, 96);
+            this.btTimKiem.Name = "btTimKiem";
+            this.btTimKiem.Size = new System.Drawing.Size(138, 34);
+            this.btTimKiem.TabIndex = 6;
+            this.btTimKiem.Text = "Tìm kiếm";
+            this.btTimKiem.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tbTimKiem
             // 
-            this.textBox1.Location = new System.Drawing.Point(163, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 34);
-            this.textBox1.TabIndex = 5;
+            this.tbTimKiem.Location = new System.Drawing.Point(163, 96);
+            this.tbTimKiem.Name = "tbTimKiem";
+            this.tbTimKiem.Size = new System.Drawing.Size(271, 34);
+            this.tbTimKiem.TabIndex = 5;
             // 
-            // button3
+            // btXoaSanPham
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(992, 164);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 40);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btXoaSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btXoaSanPham.Location = new System.Drawing.Point(992, 164);
+            this.btXoaSanPham.Name = "btXoaSanPham";
+            this.btXoaSanPham.Size = new System.Drawing.Size(218, 40);
+            this.btXoaSanPham.TabIndex = 4;
+            this.btXoaSanPham.Text = "Xóa sản phẩm";
+            this.btXoaSanPham.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btThemSanPham
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(992, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btThemSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btThemSanPham.Location = new System.Drawing.Point(992, 16);
+            this.btThemSanPham.Name = "btThemSanPham";
+            this.btThemSanPham.Size = new System.Drawing.Size(218, 40);
+            this.btThemSanPham.TabIndex = 3;
+            this.btThemSanPham.Text = "Thêm sản phẩm";
+            this.btThemSanPham.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btSuaSanPham
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(992, 90);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 40);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btSuaSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btSuaSanPham.Location = new System.Drawing.Point(992, 90);
+            this.btSuaSanPham.Name = "btSuaSanPham";
+            this.btSuaSanPham.Size = new System.Drawing.Size(218, 40);
+            this.btSuaSanPham.TabIndex = 2;
+            this.btSuaSanPham.Text = "Sửa sản phẩm";
+            this.btSuaSanPham.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -332,11 +332,11 @@ namespace BTL_QuanLyKhoHang_Nhom20
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btTimKiem;
+        private System.Windows.Forms.TextBox tbTimKiem;
+        private System.Windows.Forms.Button btXoaSanPham;
+        private System.Windows.Forms.Button btThemSanPham;
+        private System.Windows.Forms.Button btSuaSanPham;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
     }
