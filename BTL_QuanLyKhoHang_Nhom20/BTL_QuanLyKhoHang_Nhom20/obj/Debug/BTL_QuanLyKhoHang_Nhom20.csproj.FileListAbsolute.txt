@@ -389,3 +389,8 @@ C:\Users\ADMIN\OneDrive\Pictures\Máy tính\LapTinhWindow\BTL_QuanLyKhoHang_Nhom
 C:\Users\ADMIN\OneDrive\Pictures\Máy tính\LapTinhWindow\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\MSSQLLocalDB_log.ldf
 C:\Users\ADMIN\OneDrive\Pictures\Máy tính\LapTinhWindow\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\QuanLyCuaHangQuanAo.mdf
 C:\Users\ADMIN\OneDrive\Pictures\Máy tính\LapTinhWindow\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\QuanLyCuaHangQuanAo_log.ldf
+C:\Users\luong\source\repos\LapTinhWindowNhom20\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\MSSQLLocalDB.mdf
+C:\Users\luong\source\repos\LapTinhWindowNhom20\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\MSSQLLocalDB_log.ldf
+C:\Users\luong\source\repos\LapTinhWindowNhom20\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\QuanLyCuaHangQuanAo.mdf
+C:\Users\luong\source\repos\LapTinhWindowNhom20\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\QuanLyCuaHangQuanAo_log.ldf
+C:\Users\luong\source\repos\LapTinhWindowNhom20\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\obj\Debug\BTL_QuanLyKhoHang_Nhom20.InsertProductForm.resources

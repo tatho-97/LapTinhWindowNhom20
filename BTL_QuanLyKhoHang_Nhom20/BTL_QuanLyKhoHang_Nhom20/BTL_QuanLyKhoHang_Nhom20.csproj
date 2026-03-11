@@ -178,6 +178,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InsertProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertProductForm.Designer.cs">
+      <DependentUpon>InsertProductForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     <Compile Include="StaffForm.Designer.cs">
       <DependentUpon>StaffForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="InsertProductForm.resx">
+      <DependentUpon>InsertProductForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

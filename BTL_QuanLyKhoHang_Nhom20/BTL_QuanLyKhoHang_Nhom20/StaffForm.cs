@@ -12,7 +12,8 @@ namespace BTL_QuanLyKhoHang_Nhom20
 {
     public partial class StaffForm : Form
     {
-        string chuoiKetNoi = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QuanLyCuaHangQuanAo;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;"; public StaffForm()
+        string chuoiKetNoi = @"Data Source=HAPZ06\SQLEXPRESS;Initial Catalog=QuanLyCuaHangQuanAo;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;";
+        public StaffForm()
         {
             InitializeComponent();
         }
@@ -52,9 +53,9 @@ namespace BTL_QuanLyKhoHang_Nhom20
                 {
                     conn.Open();
                     // Lấy các cột gốc từ Database
-                    string sql = "SELECT * FROM products";
+                    string query = "SELECT * FROM products";
 
-                    SqlDataAdapter dtA = new SqlDataAdapter(sql, conn);
+                    SqlDataAdapter dtA = new SqlDataAdapter(query, conn);
                     DataTable table = new DataTable();
                     dtA.Fill(table);
                     dataGridView1.AutoGenerateColumns = false;
