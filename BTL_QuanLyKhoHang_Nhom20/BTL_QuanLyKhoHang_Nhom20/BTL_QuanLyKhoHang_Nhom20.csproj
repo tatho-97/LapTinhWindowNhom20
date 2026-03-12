@@ -104,7 +104,9 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=7.7.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.7.7.1\lib\net462\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
     </Reference>
@@ -178,6 +180,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProductForm.Designer.cs">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InsertProductForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +222,9 @@
     <Compile Include="StaffForm.Designer.cs">
       <DependentUpon>StaffForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EditProductForm.resx">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InsertProductForm.resx">
       <DependentUpon>InsertProductForm.cs</DependentUpon>
     </EmbeddedResource>

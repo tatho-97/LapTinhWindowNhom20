@@ -1,0 +1,10 @@
+# Visual Studio ẩn và thư mục tạm
+.vs/
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+*.user
+*.suo
+*.db
+*.opendb
