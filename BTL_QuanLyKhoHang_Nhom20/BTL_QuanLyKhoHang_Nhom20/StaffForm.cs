@@ -16,7 +16,30 @@ namespace BTL_QuanLyKhoHang_Nhom20
         {
             InitializeComponent();
         }
+        private void taoHoadon()
+        {
+            dataGridView2.RowHeadersVisible = false;//ko co tam giac
+            dataGridView2.AllowUserToAddRows = false;
+            foreach (DataGridViewRow Row in dataGridView1.Rows)
+            {
+                bool chon = Convert.ToBoolean(Row.Cells[0].Value);
+                if (chon)
+                {
+                    int n = dataGridView2.Rows.Add();
 
+                    // Gán dữ liệu từ sourceRow (bảng 1) sang dòng mới ở dataGridView2
+                    // Lưu ý: Chỉ số Cells[x] phải khớp với thứ tự cột bạn đã tạo ở trên
+                    dataGridView2.Rows[n].Cells[0].Value = true; // Đã chọn
+                    dataGridView2.Rows[n].Cells[1].Value = Row.Cells[1].Value; // Mã SP
+                    dataGridView2.Rows[n].Cells[2].Value = Row.Cells[2].Value; // Tên SP
+                    dataGridView2.Rows[n].Cells[3].Value = Row.Cells[3].Value; // Loại
+                    dataGridView2.Rows[n].Cells[4].Value = Row.Cells[4].Value; // Size
+                    dataGridView2.Rows[n].Cells[5].Value = Row.Cells[5].Value; // Giá bán
+                    dataGridView2.Rows[n].Cells[6].Value = Row.Cells[6].Value; // Tồn kho
+                }
+            }
+            
+        }
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -34,18 +57,7 @@ namespace BTL_QuanLyKhoHang_Nhom20
                     SqlDataAdapter dtA = new SqlDataAdapter(sql, conn);
                     DataTable table = new DataTable();
                     dtA.Fill(table);
-                    dataGridView1.Columns.Clear();
                     dataGridView1.AutoGenerateColumns = false;
-                    DataGridViewCheckBoxColumn check_colum = new DataGridViewCheckBoxColumn();
-                    check_colum.HeaderText = "Chọn";
-                    check_colum.Name = "col_chon";
-                    dataGridView1.Columns.Add(check_colum);
-                    dataGridView1.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "product_id", HeaderText = "Mã SP", Name = "product_id", Width = 70 });
-                    dataGridView1.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "product_name", HeaderText = "Tên sản phẩm", Name = "product_name", Width = 180 });
-                    dataGridView1.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "product_categoryName", HeaderText = "Loại", Name = "product_categoryName" });
-                    dataGridView1.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "product_size", HeaderText = "Size", Name = "product_size", Width = 50 });
-                    dataGridView1.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "product_sellingPrice", HeaderText = "Giá bán", Name = "product_sellingPrice" });
-                    dataGridView1.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = "product_stockQuantity", HeaderText = "Tồn kho", Name = "product_stockQuantity" });
                     if (table.Rows.Count > 0)
                     {
                         dataGridView1.DataSource = table;
@@ -62,5 +74,11 @@ namespace BTL_QuanLyKhoHang_Nhom20
             loadData();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            taoHoadon();
+            MessageBox.Show("Đã tạo hóa đơn");
+            tabControl1.SelectedTab = tabPage2;
+        }
     }
 }

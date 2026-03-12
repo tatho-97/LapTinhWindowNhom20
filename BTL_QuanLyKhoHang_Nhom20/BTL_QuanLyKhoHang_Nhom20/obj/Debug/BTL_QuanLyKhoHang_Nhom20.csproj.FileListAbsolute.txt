@@ -385,3 +385,7 @@ C:\Users\luong\source\repos\LapTinhWindowNhom20\BTL_QuanLyKhoHang_Nhom20\BTL_Qua
 C:\Users\luong\source\repos\LapTinhWindowNhom20\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\obj\Debug\BTL_Quan.7A193957.Up2Date
 C:\Users\luong\source\repos\LapTinhWindowNhom20\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\obj\Debug\BTL_QuanLyKhoHang_Nhom20.exe
 C:\Users\luong\source\repos\LapTinhWindowNhom20\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\obj\Debug\BTL_QuanLyKhoHang_Nhom20.pdb
+C:\Users\ADMIN\OneDrive\Pictures\Máy tính\LapTinhWindow\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\MSSQLLocalDB.mdf
+C:\Users\ADMIN\OneDrive\Pictures\Máy tính\LapTinhWindow\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\MSSQLLocalDB_log.ldf
+C:\Users\ADMIN\OneDrive\Pictures\Máy tính\LapTinhWindow\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\QuanLyCuaHangQuanAo.mdf
+C:\Users\ADMIN\OneDrive\Pictures\Máy tính\LapTinhWindow\BTL_QuanLyKhoHang_Nhom20\BTL_QuanLyKhoHang_Nhom20\bin\Debug\QuanLyCuaHangQuanAo_log.ldf
