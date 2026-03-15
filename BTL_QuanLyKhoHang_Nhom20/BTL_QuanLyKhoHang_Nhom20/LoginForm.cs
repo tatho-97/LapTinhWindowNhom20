@@ -39,7 +39,7 @@ namespace BTL_QuanLyKhoHang_Nhom20
                     // Truy vấn lấy RoleID và Tên nhân viên
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = conn;
-                    cmd.CommandText = "SELECT RoleID, E_name FROM employees WHERE us_name = '"
+                    cmd.CommandText = "SELECT RoleID, E_name,employee_id FROM employees WHERE us_name = '"
                                       + user + "' AND us_password = '" + pas + "'";
                     SqlDataReader reader= cmd.ExecuteReader();
                     if (reader.Read())
@@ -51,11 +51,13 @@ namespace BTL_QuanLyKhoHang_Nhom20
                         if (role == 1)
                         {
                             ManagerForm form = new ManagerForm();
+                            form.Tag = reader["employee_id"].ToString();
                             form.ShowDialog();
                         }
                         if(role==2)
                         {
                             StaffForm form = new StaffForm();
+                            form.Tag = reader["employee_id"].ToString();
                             form.ShowDialog();
                         }
 
